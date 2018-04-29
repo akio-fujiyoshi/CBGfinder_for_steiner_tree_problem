@@ -565,7 +565,7 @@ int main(int argc, char *argv[]) {
 #endif
 
 #ifndef _MESSAGE
-#ifndef _STEINER_TREE
+#ifndef _STEINER_TREE_OPTIMIZATION
 	printf("VALUE %lld\n", (long long) weight+num_terminal*total_weight);
 #else
 	printf("VALUE %lld\n", (long long) weight);
