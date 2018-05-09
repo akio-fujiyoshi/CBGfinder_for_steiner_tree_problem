@@ -10,4 +10,4 @@ For speed-up, the reduce method of Bodlaender et. al. was implemented.
 Type "make" or "g++ -o st-exact -O3 -std=c++11 main.cpp CBGfinder.cpp".
 
 ### Run
-Type "./st-exact -s 4321 < input_graph.gr > output.txt".
+Type "./st-exact < input_graph.gr > output.txt".
