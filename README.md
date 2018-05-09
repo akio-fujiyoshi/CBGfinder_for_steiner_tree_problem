@@ -4,6 +4,7 @@ This is a variation of CBGfinder specialized in the Steiner tree problem for PAC
 ### Algorithm
 The algorithm is based on the graphset-subgraph matching method of CBGfinder.
 CBGfinder is a software for given graphs to find subgraphs (any subgraphs, spanning subgraphs or induced subgraphs) accepted by an automaton.
+
 For speed-up, the reduce method of Bodlaender et. al. was implemented.
 
 ### Compile
