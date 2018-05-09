@@ -1,5 +1,5 @@
 # CBGfinder_for_steiner_tree_problem
-This is a variation of CBGfinder specialized in steiner tree problem for PACE 2018 competition.
+This is a variation of CBGfinder specialized in the Steiner tree problem for PACE 2018 competition.
 
 ### Algorithm
 The algorithm is based on the Graphset-Subgraph Matching Method of CBGfinder.
