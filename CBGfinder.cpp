@@ -58,13 +58,6 @@ struct rule_instance {
 	unsigned int width2;
 };
 
-struct subCBGface {
-	vid vertex;
-	rid rule;
-	cid x;
-	vid parent;
-};
-
 //Global variables
 static char state_table[100][80];
 static char sigma_table[100][80];
@@ -90,6 +83,13 @@ extern vid num_terminal;
 #endif
 
 //Data structures
+struct subCBGface {
+	vid vertex;
+	rid rule;
+	cid x;
+	vid parent;
+};
+
 class subCBG {
 public:
 	unsigned char size_face;
@@ -2381,7 +2381,7 @@ int load_automaton(char *automaton_filename) {
 				na[j]='\0';
 				rule[num_rule+1].state_l=state(na);
 				if (rule[num_rule+1].state_l==0) {
-					fprintf(stderr, "Error: automatonに未登録の状態があります。");
+					fprintf(stderr, "Error: automaton has a undefined state!");
 					exit(1);
 				}
 				i++; j=0;
