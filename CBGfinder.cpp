@@ -1857,8 +1857,8 @@ int find_CBG(Mode exe_mode, struct vertex_type *input_vertex, int input_num_vert
 			}
 		}
 
-		//For stuffing, if the mode is not spanning and not induced, then
-		if (!mode.span && !mode.ind) {
+		//For stuffing, if the mode is not induced, then
+		if (!mode.ind) {
 			for (int k=1; k<=num_rule; k++) {
 				for (int l=1; l<=num_rule; l++) {
 					if (rule[k].sigma==vertex[v1].label && rule[l].sigma==vertex[v2].label) {
@@ -2381,7 +2381,7 @@ int load_automaton(char *automaton_filename) {
 				na[j]='\0';
 				rule[num_rule+1].state_l=state(na);
 				if (rule[num_rule+1].state_l==0) {
-					fprintf(stderr, "Error: automaton‚É–¢“o˜^‚Ìó‘Ô‚ª‚ ‚è‚Ü‚·B");
+					fprintf(stderr, "Error: automatonã«æœªç™»éŒ²ã®çŠ¶æ…‹ãŒã‚ã‚Šã¾ã™ã€‚");
 					exit(1);
 				}
 				i++; j=0;
